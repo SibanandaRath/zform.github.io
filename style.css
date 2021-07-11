@@ -1,0 +1,116 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+
+body{
+        font-family: 'Mulish', sans-serif; 
+           }
+     
+input{
+    outline: none;
+    border: none;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+.container{
+    display: flex;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 90vh;
+    background-color: #ffffff;
+    box-shadow: 5px 10px 38px rgba(0,0,0,0.2);
+    border-radius: 1rem;  
+}
+.inputtext{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    color: #0f0f0f;
+    padding: 0.7rem ; 
+}
+
+
+.radio{
+display: flex;       
+    color: #0f0f0f;
+ flex-direction: row;
+ margin-top: 1rem;
+    
+    }
+.wrap{
+    width: 80%;
+    position: relative;
+    border-bottom: 2px solid #998989;
+    margin-bottom: 13px;
+}
+
+select{
+    border-radius:2rem ;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    /* padding: 0.3rem 2rem; */
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1.3rem;
+    border: none;
+    background: #d5ddec;
+    color: rgb(3, 2, 2);
+    /* border: 1.5px solid #000000; */
+    position: relative;
+    z-index: 1;
+    transition: ease-out 0.3s;
+}
+
+.btn:hover{
+color: rgb(240, 232, 232);
+cursor: pointer;
+
+}
+.btn::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #eea647;
+    border-radius: 40px;
+    }
+    
+.btn:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.container1{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at 62% 39%, rgba(30, 30, 30,0.05) 0%, rgba(30, 30, 30,0.05) 8%,transparent 8%, transparent 16%,transparent 16%, transparent 28%,transparent 28%, transparent 100%),radial-gradient(circle at 19% 61%, rgba(201, 201, 201,0.01) 0%, rgba(201, 201, 201,0.01) 59%,transparent 59%, transparent 60%,transparent 60%, transparent 99%,transparent 99%, transparent 100%),radial-gradient(circle at 15% 5%, rgba(186, 186, 186,0.05) 0%, rgba(186, 186, 186,0.05) 9%,transparent 9%, transparent 79%,transparent 79%, transparent 92%,transparent 92%, transparent 100%),radial-gradient(circle at 64% 49%, rgba(51, 51, 51,0.08) 0%, rgba(51, 51, 51,0.08) 22%,transparent 22%, transparent 50%,transparent 50%, transparent 96%,transparent 96%, transparent 100%),radial-gradient(circle at 53% 21%, rgba(0, 0, 0,0.04) 0%, rgba(0, 0, 0,0.04) 21%,transparent 21%, transparent 80%,transparent 80%, transparent 89%,transparent 89%, transparent 100%),radial-gradient(circle at 14% 91%, rgba(49, 49, 49,0.04) 0%, rgba(49, 49, 49,0.04) 35%,transparent 35%, transparent 63%,transparent 63%, transparent 71%,transparent 71%, transparent 100%),radial-gradient(circle at 42% 78%, rgba(64, 64, 64,0.02) 0%, rgba(64, 64, 64,0.02) 56%,transparent 56%, transparent 75%,transparent 75%, transparent 80%,transparent 80%, transparent 100%),radial-gradient(circle at 76% 85%, rgba(69, 69, 69,0.06) 0%, rgba(69, 69, 69,0.06) 53%,transparent 53%, transparent 68%,transparent 68%, transparent 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(143, 249, 177),rgb(62, 146, 80));
+}
+
+.inputradio{
+    margin-left: 2rem;
+}
